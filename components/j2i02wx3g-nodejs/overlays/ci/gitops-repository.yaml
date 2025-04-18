@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: j2i02wx3g-nodejs-gitops-repository
+spec:
+  url: https://github.com/sjm-rhtap/j2i02wx3g-nodejs-gitops

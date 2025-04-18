@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: j2i02wx3g-nodejs-gitops
+  description: This is GitOps manifest for j2i02wx3g-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=j2i02wx3g-nodejs
+    backstage.io/kubernetes-id: j2i02wx3g-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    github.com/project-slug: sjm-rhtap/j2i02wx3g-nodejs-gitops
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:j2i02wx3g-nodejs
